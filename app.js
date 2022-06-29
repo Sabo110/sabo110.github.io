@@ -3,6 +3,8 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
+       
+        
         questions: [
             {
                libele: '1-que signifie le mot djoss ?',
@@ -12,7 +14,7 @@ const { createApp } = Vue
                rp4: 'parler',
                numero:1,
                rep: 'parler',
-               trouver: false
+               
             },
             {
                 libele: '2-que signifie le mot talk ?',
@@ -22,7 +24,7 @@ const { createApp } = Vue
                 rp4: 'bien',
                 numero:2,
                 rep: 'dire',
-                trouver: false
+                
              },
              {
                 libele: '3-que signifie le mot slack ?',
@@ -32,7 +34,7 @@ const { createApp } = Vue
                 rp4: 'douter',
                 numero:3,
                 rep: 'laisser',
-                trouver: false
+                
              },
              {
                 libele: '4-que signifie le mot yamo ?',
@@ -42,7 +44,7 @@ const { createApp } = Vue
                 rp4: 'rithmeur',
                 numero:4,
                 rep: 'amour',
-                trouver: false
+                
              },
              {
                 libele: '5-que signifie le mot la ndang ?',
@@ -52,8 +54,58 @@ const { createApp } = Vue
                 rp4: 'chanteur',
                 numero:5,
                 rep: 'carte',
-                trouver: false
+               
+             },
+             {
+                libele: '6-que signifie le mot flipper ?',
+                rp1: 'etonner',
+                rp2: 'rage',
+                rp3: 'peur',
+                rp4: 'fou',
+                numero:6,
+                rep: 'peur',
+                
+             },
+             {
+                libele: '7-que signifie le mot wanda ?',
+                rp1: 'etonner',
+                rp2: 'ok',
+                rp3: 'non',
+                rp4: 'moi',
+                numero:7,
+                rep: 'etonner',
+            },
+            {
+                libele: '8-que signifie le mot la chech ?',
+                rp1: 'ecole',
+                rp2: 'marche',
+                rp3: 'eglise',
+                rp4: 'hopital',
+                numero:8,
+                rep: 'eglise',
+                
+             },
+             {
+                libele: '9-que signifie le mot la ngueme ?',
+                rp1: 'galere',
+                rp2: 'argent',
+                rp3: 'nourriture',
+                rp4: 'pouvoir',
+                numero:9,
+                rep: 'galere',
+                
+             },
+             {
+                libele: '10-que signifie le mot la bro ?',
+                rp1: 'frere ou soeur',
+                rp2: 'pere',
+                rp3: 'mere',
+                rp4: 'oncle',
+                numero:10,
+                rep: 'frere ou soeur',
+                
              }
+
         ],
         reponses: ['parler', 'dire','laisser','amour']
            
