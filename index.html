@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jalloud</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/vue@3"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="app" class="">
+            <h1 class="">quiz francanglais!!</h1>
+            <h3 class="">teste ton niveau de francanglais!!</h3>
+            <div v-for="question in questions">
+                <h6>{{question.libele}}</h6>
+                <div class="row mb-4 g-2">
+                    <div class="col-6">
+                       <div class=" text-light p-2 text-capitalize rounded element" v-on:click="verification(question.rp1,question.numero)" :class="{bg: question.rp1=== 'vrai bro',br: question.rp1=== 'faux bro'}">{{question.rp1}}</div>   
+                    </div>
+                    <div class="col-6">
+                        <div class=" text-light p-2 text-capitalize rounded element" v-on:click="verification(question.rp2,question.numero)" :class="{bg: question.rp2=== 'vrai bro',br: question.rp2=== 'faux bro'}" >{{question.rp2}}</div>      
+                    </div>
+                    <div class="col-6">
+                        <div class=" text-light p-2 text-capitalize rounded element" v-on:click="verification(question.rp3,question.numero)" :class="{bg: question.rp3=== 'vrai bro',br: question.rp3=== 'faux bro'}">{{question.rp3}}</div>      
+                    </div>
+                    <div class="col-6">
+                        <div class=" text-light p-2 text-capitalize rounded element" v-on:click="verification(question.rp4,question.numero)" :class="{bg: question.rp4=== 'vrai bro',br: question.rp4=== 'faux bro'}" >{{question.rp4}} </div>     
+                    </div>
+                </div>
+                <span></span>
+            </div>
+                
+        </div>
+           
+    </div>
+    
+
+    <style>
+        body{
+         margin: 0;
+         
+        }
+        h1,h3{
+            
+            font-size: medium;
+            text-align: center;
+        }
+        .element{
+            background-color: rgb(58, 105, 206);
+        }
+        .bg{
+            background-color: rgb(99, 216, 109);
+        }
+        .br{
+            background-color: rgb(173, 46, 46);
+        }
+    </style>
+
+    <script src="app.js"></script>
+</body>
+</html>
